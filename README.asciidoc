@@ -14,3 +14,5 @@ the http://tools.android.com[Android NDK].
 === Contributions
 
 We welcome your feature enhancements and bug fixes in pull requests!
+
+Video: https://www.youtube.com/watch?v=ozK8YJw-oY4
