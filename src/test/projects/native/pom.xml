@@ -17,18 +17,16 @@
 
   <modules>
     <module>native-code</module>
-    <module>native-static-lib</module>
-    <module>native-code-including-static-lib</module>
+    <module>native-static-lib</module>    
     <module>mixed-java-native-code</module>
     <module>native-code-two-executions</module>
     <module>native-code-nonstandard-structure</module>
     <module>native-apklib</module>
     <module>native-aar</module>
-    <module>mixed-java-native-with-apklib-dependency</module>
-    <!--
+	<!--
+	  <module>mixed-java-native-with-apklib-dependency</module>    
       <module>transient-apklib-with-native</module>
     -->
-
   </modules>
 
   <dependencyManagement>
@@ -48,18 +46,21 @@
         <plugin>
           <groupId>com.simpligility.maven.plugins</groupId>
           <artifactId>android-maven-plugin</artifactId>
-          <version>4.4.1</version>
-          <extensions>true</extensions>
-          <configuration>
-            <ndkArchitectures>x86 armeabi armeabi-v7a mips arm64-v8a</ndkArchitectures>
-          </configuration>
+          <version>4.5.0</version>
+			<extensions>true</extensions>
+			<configuration>
+				<sdk>
+					<platform>26</platform>
+				</sdk>
+				<ndkArchitectures>arm64-v8a armeabi-v7a x86 x86_64</ndkArchitectures>
+			</configuration>
         </plugin>
         <plugin>
           <groupId>com.simpligility.maven.plugins</groupId>
           <artifactId>android-ndk-maven-plugin</artifactId>
           <version>${it-plugin.version}</version>
           <configuration>
-            <architectures>x86 armeabi armeabi-v7a mips</architectures>
+            <architectures>arm64-v8a armeabi-v7a x86 x86_64</architectures>
             <!-- To override the toolchains for each architecture, specify a mapping as shown below-->
             <additionalCommandline>V=1 -B</additionalCommandline>
           </configuration>

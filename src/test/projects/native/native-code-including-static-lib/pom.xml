@@ -18,14 +18,7 @@
 
   <name>Android NDK - Native Code including Static Library</name>
 
-  <dependencies>
-    <dependency>
-      <groupId>com.simpligility.maven.plugins.ndk.samples</groupId>
-      <artifactId>native-static-lib</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
-      <classifier>armeabi</classifier>
-      <type>a</type>
-    </dependency>
+  <dependencies>    
     <dependency>
       <groupId>com.simpligility.maven.plugins.ndk.samples</groupId>
       <artifactId>native-static-lib</artifactId>
@@ -39,14 +32,7 @@
       <version>1.0.0-SNAPSHOT</version>
       <classifier>x86</classifier>
       <type>a</type>
-    </dependency>
-    <dependency>
-      <groupId>com.simpligility.maven.plugins.ndk.samples</groupId>
-      <artifactId>native-static-lib</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
-      <classifier>mips</classifier>
-      <type>a</type>
-    </dependency>
+    </dependency>    
   </dependencies>
 
   <build>
